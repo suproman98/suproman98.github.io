@@ -31,7 +31,7 @@ increase efficiency in my code.
 plot(x = mtcars$wt, y = mtcars$mpg)
 ```
 
-!![img](/images/image.jpeg)<!-- -->
+!![img](/images/cars-8-1.png)<!-- -->
 
 ``` r
 #rmarkdown::render("2022-06-08-blog-post-programming-background.Rmd", 
