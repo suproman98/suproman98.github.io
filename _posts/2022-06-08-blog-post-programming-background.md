@@ -31,7 +31,7 @@ increase efficiency in my code.
 plot(x = mtcars$wt, y = mtcars$mpg)
 ```
 
-![](C:/Users/16787/OneDrive/Documents/suproman98.github.io/_posts/2022-06-08-blog-post-programming-background_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+!![img](/images/image.jpeg)<!-- -->
 
 ``` r
 #rmarkdown::render("2022-06-08-blog-post-programming-background.Rmd", 
