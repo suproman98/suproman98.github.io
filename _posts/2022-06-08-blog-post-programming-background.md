@@ -36,8 +36,8 @@ plot(x = mtcars$wt, y = mtcars$mpg)
 ``` r
 #rmarkdown::render("2022-06-08-blog-post-programming-background.Rmd", 
 #                 output_format = "github_document",
-#                output_dir = "C:/Users/16787/OneDrive/Documents/suproman98.github.io/_posts",
-#                  output_options = list(
+#                 output_dir = "_posts",
+#                 output_options = list(
 #                    df_print = "default",
 #                    toc = FALSE,
 #                    number_sections = FALSE,
