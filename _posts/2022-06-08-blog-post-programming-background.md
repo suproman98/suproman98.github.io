@@ -2,6 +2,8 @@ Programming Background
 ================
 Supro Debnath
 
+![img](/images/image.jpeg)
+
 ## Second Blog Post
 
 My day to day workload primarily uses SAS and SQL. As a data analyst,
