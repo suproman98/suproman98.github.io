@@ -8,5 +8,5 @@ The most difficult part of this project was definitely the functions. I learned 
 
 ## Github Pages and Repo Links
 
-[github pages](https://github.com/suproman98/pokeAPI-Vignette.git)
-[github repo](https://suproman98.github.io/pokeAPI-Vignette/)
+- [github repo](https://github.com/suproman98/pokeAPI-Vignette.git)
+- [github pages](https://suproman98.github.io/pokeAPI-Vignette/)

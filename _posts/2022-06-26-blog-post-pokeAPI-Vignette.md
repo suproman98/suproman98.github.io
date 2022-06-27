@@ -57,5 +57,5 @@ on the next, I want to get better at telling a story.
 
 ## Github Pages and Repo Links
 
-[github pages](https://github.com/suproman98/pokeAPI-Vignette.git)
-[github repo](https://suproman98.github.io/pokeAPI-Vignette/)
+-   [github repo](https://github.com/suproman98/pokeAPI-Vignette.git)
+-   [github pages](https://suproman98.github.io/pokeAPI-Vignette/)
