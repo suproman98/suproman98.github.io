@@ -76,5 +76,3 @@ factors that can influence a model’s performance.
 #                    keep_html = FALSE)
 #)
 ```
-
-\`\`\`
