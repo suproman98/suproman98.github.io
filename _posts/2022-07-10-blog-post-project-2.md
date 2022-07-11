@@ -2,7 +2,7 @@
 ## Project Overview
 
 This project consisted of exploratory analysis on the [Online News
-Popularity](https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity#)
+Popularity](https://archive.ics.uci.edu/ml/datasets/online+news+popularity)
 dataset. This data mainly focused on the number of `shares` (our
 response) by `channel`. As there were six channels, we needed to
 automate the code to subset and create documents based on each channel,
