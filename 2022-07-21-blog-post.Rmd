@@ -10,7 +10,7 @@ library(stats)
 library(ggplot2)
 library(ggpubr)
 data("quakes")
-print(quakes)
+head(quakes)
 ```
 
 Now, let's split up our data into a training and test set.
@@ -34,6 +34,6 @@ rforest <- train(mag ~ .,
                tuneGrid=tgrf)
 #predict the values for our response variable and compare it to our testing data. 
 rforest_pred <- predict(rforest, newdata = select(quaketest, -mag))
-rforest_pred
+head(rforest_pred)
 ```
 
