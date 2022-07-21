@@ -1,0 +1,39 @@
+## Post Machine Learning Thoughts
+
+Since my last blog post, I've learned about classification/regression trees and ensemble models. I've learned the differences between supervised and unsupervised learning and how to compare different models by fitting testing data on it. By far, I think the coolest method has to be random forests, as it takes into account both classification and regression and constructs many decision trees when training data. The idea for classification is that the output the random forest gives out will be the most prevalent class among the trees, while for regression it's the mean or average prediction of the trees. We will be looking at the `quakes` data set, with our response being `magnitude`. Below, we'll run a random forest to show how it works. 
+Let's import our data first.
+```{r}
+library(tidyverse)
+library(dplyr)
+library(caret)
+library(stats)
+library(ggplot2)
+library(ggpubr)
+data("quakes")
+print(quakes)
+```
+
+Now, let's split up our data into a training and test set.
+```{r}
+set.seed(123)
+train <- sample(1:nrow(quakes), size = nrow(quakes)*.75)
+test <- dplyr::setdiff(1:nrow(quakes), train)
+quaketrain <- quakes[train, ]
+quaketest <- quakes[test, ]
+```
+
+Finally, let's fit a random forest model with this data.
+```{r}
+trctrl <- trainControl(method = "repeatedcv", number=10, repeats=3)
+tgrf <- expand.grid(mtry=c(1:15))
+rforest <- train(mag ~ ., 
+               method='rf', 
+               trControl=trctrl, 
+               data=quaketrain, 
+               preProcess=c("center", "scale"),
+               tuneGrid=tgrf)
+#predict the values for our response variable and compare it to our testing data. 
+rforest_pred <- predict(rforest, newdata = select(quaketest, -mag))
+rforest_pred
+```
+
